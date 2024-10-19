@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: rgb(15, 13, 13);
+}
+.games-block{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    width: max-content;
+    margin: 20px auto;
+    gap: 20px;
+}
+.games-block__game{
+    position: relative;
+    box-shadow: 0px 0px 9990px yellowgreen;
+}
+.game__name{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 2px;
+    user-select: none;
+}
+.game__price{
+    position: absolute;
+    bottom: 10px;
+    right: 135px;
+    width: 125px;
+    background-color: black;
+    color: yellowgreen;
+    border-radius: 8px 0 0 8px;
+    padding: 3px;
+    user-select: none;
+}
+.game__buy{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 125px;
+    background-color: greenyellow;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    padding: 3px;
+}
+.game__img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+button{
+    all: unset
+}
+.basket-btn{
+    position: absolute;
+    top: 50px;
+    right: 100%;
+    background-color: yellowgreen;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.basket-btn img{
+    width: 40px;
+    height: 40px;
+    transform: rotate(180deg);
+    transition: 1s;
+}
+.basket-block{
+    position: fixed;
+    height: 100vh;
+    right: -400px;
+    top: 10px;
+    width: 400px;
+    background-color: white;
+    z-index: 2;
+    transition: 1s;
+    background-color: #404040;
+}
+
+.basket-block__games{
+    
+    
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+
+    height: 80%;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+
+.basket-button-buy{
+    display: flex;
+    align-items: row;
+}
+
+
+
+.basket-img-div{
+    width: 50%;   
+}
+.basket-img-div img{
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+
+.basket-block__games__game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px white;
+    box-shadow: 0px 0px 90px yellowgreen;
+    flex-direction: column;
+
+    flex: 1;
+    position: relative;
+    background-color: rgb(65, 255, 36);
+}
+
+.basket-block__games__game button{
+    padding: 6px 2px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    border: solid 1px;
+    background-color:rgb(255, 72, 72) ;
+}
